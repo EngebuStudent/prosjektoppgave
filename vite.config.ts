@@ -7,6 +7,7 @@ export default defineConfig({
     include: ['react-router-dom'],
   },
   build: {
-    outDir: 'dist', // Output folder for Firebase Hosting
+    outDir: 'dist', // Output folder for GitHub Pages
   },
+  base: '/prosjektoppgave/', // Set base URL for GitHub Pages
 });
