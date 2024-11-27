@@ -70,8 +70,8 @@ const Map = () => {
   };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleDrag = (e: any, data: any) => {
-    setLegendPosition({ x: data.x, y: data.y });
+  const handleDrag = (data: any) => {
+    setLegendPosition({x: data.x, y: data.y });
   };
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Prototype1 from './prototype_1/src/Prototype_1';
 import Prototype2 from './prototype_2/src/Prototype_2';

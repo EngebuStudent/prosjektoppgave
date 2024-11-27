@@ -97,7 +97,7 @@ const Map = () => {
         bounds="parent"
         nodeRef={legendRef}
         position={legendPosition}
-        onDrag={(e, data) => setLegendPosition({ x: data.x, y: data.y })}
+        onDrag={(_e, data) => setLegendPosition({ x: data.x, y: data.y })}
       >
         <div
           ref={legendRef}
