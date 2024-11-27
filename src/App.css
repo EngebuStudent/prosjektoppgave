@@ -1,0 +1,71 @@
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+/* Navigation styles */
+.navigation {
+  background-color: rgba(34, 34, 34, 0.85); /* Semi-transparent dark background */
+  color: white;
+  padding: 10px 15px;
+  position: absolute; /* Position it at the top left */
+  top: 0;
+  left: 0;
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+  z-index: 1000; /* Ensure it stays above other elements */
+  display: flex; /* Arrange navigation links in a row */
+  align-items: center;
+}
+
+.navigation.visible {
+  max-height: 100px; /* Adjust to fit the content */
+}
+
+.navigation.hidden {
+  max-height: 0; /* Collapse when hidden */
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex; /* Arrange items in a row */
+  margin: 0;
+  padding: 0;
+  gap: 15px; /* Space between links */
+}
+
+.navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+/* Toggle button */
+.toggle-nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-nav:hover {
+  background-color: #0056b3;
+}

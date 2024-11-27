@@ -1,0 +1,47 @@
+/* Map container styles */
+.map-container {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  position: relative; /* Required for map positioning */
+  overflow: hidden; /* Prevent scrollbars */
+  background-color: #f0f0f0; /* Light gray background as a fallback */
+  z-index: 0; /* Ensure it stays below other elements */
+}
+
+/* Circle and text styling for the map */
+.mapboxgl-canvas {
+  
+  position: relative; /* Ensures canvas aligns properly */
+  z-index: 1; /* Keep it on top of other layers */
+}
+
+/* Tooltip or Popup styling (optional, if you add popups) */
+.map-tooltip {
+  background-color: rgba(0, 0, 0, 0.75); /* Dark semi-transparent background */
+  color: white; /* White text for contrast */
+  padding: 8px 12px; /* Add some padding */
+  border-radius: 4px; /* Smooth corners */
+  font-size: 12px; /* Small text */
+  font-family: Arial, sans-serif; /* Clean font */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  pointer-events: none; /* Prevent interaction with the tooltip */
+}
+
+/* Text labels on the map */
+.map-label {
+  color: #ffffff; /* White text */
+  font-size: 12px; /* Small font size */
+  font-weight: bold; /* Bold font for emphasis */
+  text-shadow: 0 0 2px #000000; /* Subtle shadow for readability */
+}
+
+/* Responsive design adjustments for small screens */
+@media (max-width: 768px) {
+  .map-container {
+    height: 80vh; /* Slightly reduce height on small screens */
+  }
+
+  .map-label {
+    font-size: 10px; /* Smaller labels for smaller screens */
+  }
+}
